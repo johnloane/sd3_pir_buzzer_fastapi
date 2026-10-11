@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Dashboard</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header bg-dark text-white py-3">
+                        <h4 class="mb-0">System Monitor</h4>
+                    </div>
+                    <div class="card-body p-4">
+                        
+                        <!-- Connection Status -->
+                        <div class="d-flex justify-content-between align-items-center mb-4 pb-3 border-bottom">
+                            <span class="fs-5 fw-semibold text-secondary">Connection</span>
+                            <span id="connection_badge" class="badge bg-secondary fs-6 rounded-pill px-3 py-2">Waiting...</span>
+                        </div>
+                        
+                        <!-- Motion Status -->
+                        <div class="d-flex justify-content-between align-items-center mb-4 pb-3 border-bottom">
+                            <span class="fs-5 fw-semibold text-secondary">PIR Sensor</span>
+                            <span id="motion_badge" class="badge bg-secondary fs-6 rounded-pill px-3 py-2">Waiting...</span>
+                        </div>
+                        
+                        <!-- Buzzer Control -->
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <label for="buzzer" class="fs-5 fw-semibold text-secondary mb-0">Manual Buzzer</label>
+                            <div class="form-check form-switch fs-3 mb-0">
+                                <input class="form-check-input mt-0" type="checkbox" role="switch" id="buzzer">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Link to external JS -->
+    <script src="static/js/main.js"></script>
+</body>
+</html>
